@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello World</title>
+
+	<style type="text/css">
+		html {
+			height: 90%;
+		}
+		body {
+
+			height: 90%;
+			background: darkblue;
+		}
+
+		.mainWindow {
+
+			  color: white;
+			  text-align: center;
+			  height: 100%;
+			  width: 100%;
+			  display: table;
+			font-size: 64px;
+		}
+
+
+		.intro-text {
+		  color: white;
+		  max-width: 600px;
+		  margin: 0 auto;
+		  vertical-align: middle;
+		  display: table-cell;
+		}
+
+		.cf:before,
+		.cf:after {
+		    content: " "; /* 1 */
+		    display: table; /* 2 */
+		}
+
+		.cf:after {
+		    clear: both;
+		}
+
+		/**
+		 * For IE 6/7 only
+		 * Include this rule to trigger hasLayout and contain floats.
+		 */
+		.cf {
+		    *zoom: 1;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="mainWindow">
+		<div class="intro-text cf">
+			Hello World
+		</div>
+	</div>
+</body>
+</html>
